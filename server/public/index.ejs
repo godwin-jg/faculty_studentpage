@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>KEC</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://placement.kongu.edu/assets/favicons/192.png">
+    <base href="/" />
+    <link href="./plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content clearfix">
+
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <div class="input-group icons">
+                        <div class="input-group-prepend">
+                            <img src="https://placement.kongu.edu/assets/favicons/192.png" alt="" height="63px"
+                                width="65" style="margin-top: -16.5px; border-style: ridge;">
+                        </div>
+                        <H2 style="padding-left: 13px;">KEC</H2>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative" data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile animated fadeIn dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li><a href="/login"><i class="icon-key"></i> <span>Logout</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="icons dropdown d-none d-md-flex">
+                            <h5 style="margin-top: 10px;"><span>
+                                    <%=email %>
+                                </span></h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Dashboard</li>
+                    <li>
+                        <a href="/api/courses/getcourses">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="icon-note menu-icon"></i><span class="nav-text">My Courses</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-3">
+
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2>My Courses</h2>
+                                <div class="active-member">
+                                    <div class="table-responsive">
+                                        <table class="table table-xs mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Staff Name</th>
+                                                    <th>Course Code</th>
+                                                    <th>Course Name</th>
+                                                    <th>Available of the Course</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><img src="./images/avatar/1.jpg" class=" rounded-circle mr-3"
+                                                            alt="">Sarah Smith</td>
+                                                    <td>21CSR021</td>
+                                                    <td>
+                                                        <span>Computer Science Engineering</span>
+                                                    </td>
+
+                                                    <td><i class="fa fa-circle-o text-success  mr-2"></i> Open</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="./images/avatar/2.jpg" class=" rounded-circle mr-3"
+                                                            alt="">Walter R.</td>
+                                                    <td>21CSL225</td>
+                                                    <td><span>Aeronautical Engineering.</span></td>
+
+                                                    <td><i class="fa fa-circle-o text-success  mr-2"></i> Open</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="./images/avatar/3.jpg" class=" rounded-circle mr-3"
+                                                            alt="">Andrew D.</td>
+                                                    <td>21CSD002</td>
+                                                    <td><span>Mechanical Engineering.</span></td>
+
+                                                    <td><i class="fa fa-circle-o text-danger  mr-2"></i> closed</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="./images/avatar/6.jpg" class=" rounded-circle mr-3"
+                                                            alt=""> Megan S.</td>
+                                                    <td>32ECE008</td>
+                                                    <td><span>Electrical and Electronics Engineering</span></td>
+
+                                                    <td><i class="fa fa-circle-o text-success  mr-2"></i> Open</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="./images/avatar/4.jpg" class=" rounded-circle mr-3"
+                                                            alt=""> Doris R.</td>
+                                                    <td>21EWS991</td>
+                                                    <td><span>Biotech Engineering.</span></td>
+
+                                                    <td><i class="fa fa-circle-o text-success  mr-2"></i> Open</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="./images/avatar/5.jpg" class=" rounded-circle mr-3"
+                                                            alt="">Elizabeth W.</td>
+                                                    <td>21ECE333</td>
+                                                    <td><span>Computer Science Engineering.</span></td>
+
+                                                    <td><i class="fa fa-circle-o text-danger  mr-2"></i> Closed</td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a>
+                    2018</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="./plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="./plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+    <script src="./plugins/d3v3/index.js"></script>
+    <script src="./plugins/topojson/topojson.min.js"></script>
+    <script src="./plugins/datamaps/datamaps.world.min.js"></script>
+    <!-- Morrisjs -->
+    <script src="./plugins/raphael/raphael.min.js"></script>
+    <script src="./plugins/morris/morris.min.js"></script>
+    <!-- Pignose Calender -->
+    <script src="./plugins/moment/moment.min.js"></script>
+    <script src="./plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="./plugins/chartist/js/chartist.min.js"></script>
+    <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="./js/dashboard/dashboard-1.js"></script>
+
+</body>
+
+</html>
